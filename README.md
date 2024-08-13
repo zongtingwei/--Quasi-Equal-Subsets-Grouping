@@ -1,2 +1,2 @@
 # --Quasi-Equal-Subsets-Grouping
-a
+psi Quasi Equal Subsets Grouping code
