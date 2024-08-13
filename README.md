@@ -1,2 +1,2 @@
-# --Quasi-Equal-Subsets-Grouping
-psi Quasi Equal Subsets Grouping code
+# Environment selection strategy in multi-objective algorithm
+
