@@ -46,7 +46,7 @@ def KNN_with_cross_validation(X_scaled, y, xi):
 
 def calculate_accuracy(xi):
     # 调整为您的数据文件路径
-    file_path = r'C:\Users\11741\Pycharm\pythonProject1\data\colon.mat'
+    file_path = r'your filename.mat'
     X_scaled, y = load_and_prepare_data(file_path)
     mean_accuracy = KNN_with_cross_validation(X_scaled, y, xi)
     return mean_accuracy
@@ -109,7 +109,7 @@ def dominates(individual1, individual2, objectives):
 
 # 示例目标函数
 def objective1(xi):
-    file_path = r'C:\Users\11741\Pycharm\pythonProject1\data\colon.mat'
+    file_path = r'your filename.mat'
     X_scaled, y = load_and_prepare_data(file_path)
     mean_accuracy = KNN_with_cross_validation(X_scaled, y, xi)
     return 1-mean_accuracy
@@ -251,8 +251,8 @@ def calculating_Ci(W,N):
 
 
 
-# 示例种群
-data = scio.loadmat(r'C:\Users\11741\Pycharm\pythonProject1\data\colon.mat')
+# 示例种群 
+data = scio.loadmat(r'your filename.mat')
 dic1 = data['X']
 dic2 = data['Y']
 df1 = pd.DataFrame(dic1)  # 将NumPy数组转换为DataFrame对象
