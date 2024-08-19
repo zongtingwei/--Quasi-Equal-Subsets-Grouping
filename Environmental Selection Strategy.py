@@ -19,7 +19,7 @@ def hamming_distance(s1, s2):
 def load_and_prepare_data(file_path):
     # 从文件加载数据
     data = scio.loadmat(file_path)
-    X = pd.DataFrame(data['X']).values  # 转换为numpy数组
+    X = pd.DataFrame(data['X']).values  
     y = pd.DataFrame(data['Y']).values.ravel()  # 转换为一维数组
 
     # 使用 MinMaxScaler 进行特征缩放
