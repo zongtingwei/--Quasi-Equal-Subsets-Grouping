@@ -20,7 +20,7 @@ def load_and_prepare_data(file_path):
     # 从文件加载数据
     data = scio.loadmat(file_path)
     X = pd.DataFrame(data['X']).values  
-    y = pd.DataFrame(data['Y']).values.ravel()  # 转换为一维数组
+    y = pd.DataFrame(data['Y']).values.ravel()  
 
     # 使用 MinMaxScaler 进行特征缩放
     scaler = MinMaxScaler()
