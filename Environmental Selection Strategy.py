@@ -29,7 +29,7 @@ def load_and_prepare_data(file_path):
     return X_scaled, y
 
 def KNN_with_cross_validation(X_scaled, y, xi):
-    boolean_array = np.array(xi).astype(bool)  # 将xi转换为NumPy数组再进行类型转换
+    boolean_array = np.array(xi).astype(bool)  
     X_selected = X_scaled[:, boolean_array]
 
     # 创建 k-NN 分类器，设置 k 值
