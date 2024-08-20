@@ -17,15 +17,11 @@ def hamming_distance(s1, s2):
     return distance
 
 def load_and_prepare_data(file_path):
-    # 从文件加载数据
     data = scio.loadmat(file_path)
     X = pd.DataFrame(data['X']).values  
     y = pd.DataFrame(data['Y']).values.ravel()  
-
-    # 使用 MinMaxScaler 进行特征缩放
     scaler = MinMaxScaler()
     X_scaled = scaler.fit_transform(X)
-
     return X_scaled, y
 
 def KNN_with_cross_validation(X_scaled, y, xi):
