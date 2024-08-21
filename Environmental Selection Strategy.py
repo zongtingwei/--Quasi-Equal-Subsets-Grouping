@@ -26,8 +26,6 @@ def KNN_with_cross_validation(X_scaled, y, xi):
     boolean_array = np.array(xi).astype(bool)  
     X_selected = X_scaled[:, boolean_array]
     knn_classifier = KNeighborsClassifier(n_neighbors=5)
-
-    # 进行5倍交叉验证并计算平均精度
     scores = cross_val_score(knn_classifier, X_selected, y, cv=5)
     mean_accuracy = np.mean(scores)
 
