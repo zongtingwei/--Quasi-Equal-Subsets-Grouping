@@ -28,7 +28,6 @@ def KNN_with_cross_validation(X_scaled, y, xi):
     knn_classifier = KNeighborsClassifier(n_neighbors=5)
     scores = cross_val_score(knn_classifier, X_selected, y, cv=5)
     mean_accuracy = np.mean(scores)
-
     return mean_accuracy
 
 # 其他函数和代码保持不变
