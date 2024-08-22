@@ -37,7 +37,7 @@ def calculate_accuracy(xi):
     return mean_accuracy
 
 def fast_non_dominated_sort(values1, values2):
-    size = len(values1)  # 种群大小
+    size = len(values1)  
     s = [[] for _ in range(size)]  # 每个解的被支配集合
     n = [0 for _ in range(size)]  # 每个解的支配数
     rank = [0 for _ in range(size)]  # 每个解的等级
