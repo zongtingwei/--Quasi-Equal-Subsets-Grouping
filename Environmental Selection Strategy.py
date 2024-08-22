@@ -31,7 +31,6 @@ def KNN_with_cross_validation(X_scaled, y, xi):
     return mean_accuracy
 
 def calculate_accuracy(xi):
-    # 调整为您的数据文件路径
     file_path = r'your filename.mat'
     X_scaled, y = load_and_prepare_data(file_path)
     mean_accuracy = KNN_with_cross_validation(X_scaled, y, xi)
