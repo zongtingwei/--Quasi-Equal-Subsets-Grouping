@@ -39,7 +39,7 @@ def calculate_accuracy(xi):
 def fast_non_dominated_sort(values1, values2):
     size = len(values1)  
     s = [[] for _ in range(size)]  
-    n = [0 for _ in range(size)]  # 每个解的支配数
+    n = [0 for _ in range(size)]  
     rank = [0 for _ in range(size)]  # 每个解的等级
     fronts = [[]]  # 所有非支配前沿
 
