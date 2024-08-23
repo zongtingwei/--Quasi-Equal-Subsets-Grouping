@@ -40,7 +40,7 @@ def fast_non_dominated_sort(values1, values2):
     size = len(values1)  
     s = [[] for _ in range(size)]  
     n = [0 for _ in range(size)]  
-    rank = [0 for _ in range(size)]  # 每个解的等级
+    rank = [0 for _ in range(size)]  
     fronts = [[]]  # 所有非支配前沿
 
     for p in range(size):  # 遍历所有解
