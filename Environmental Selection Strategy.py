@@ -44,7 +44,7 @@ def fast_non_dominated_sort(values1, values2):
     fronts = [[]]  
 
     for p in range(size): 
-        s[p] = []  # 初始化非支配集合和支配数
+        s[p] = []  
         n[p] = 0
         for q in range(size):  # 判断p和q支配情况
             # 如果p支配q，增加q到p的被支配集合
