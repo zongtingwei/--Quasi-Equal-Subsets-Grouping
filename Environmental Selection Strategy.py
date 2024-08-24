@@ -46,7 +46,7 @@ def fast_non_dominated_sort(values1, values2):
     for p in range(size): 
         s[p] = []  
         n[p] = 0
-        for q in range(size):  # 判断p和q支配情况
+        for q in range(size):  
             # 如果p支配q，增加q到p的被支配集合
             if values1[p] <= values1[q] and values2[p] <= values2[q] \
                     and ((values1[q] == values1[p]) + (values2[p] == values2[q])) != 2:
