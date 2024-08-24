@@ -53,11 +53,9 @@ def fast_non_dominated_sort(values1, values2):
             elif values1[q] <= values1[p] and values2[q] <= values2[p] \
                     and ((values1[q] == values1[p]) + (values2[p] == values2[q])) != 2:
                 n[p] += 1
-        # n[p]=0的解等级设为0，增加到第一前沿
         if n[p] == 0:
             rank[p] = 0
             fronts[0].append(p)
-    # 依次确定其它层非支配前沿
     i = 0
     while fronts[i]:
         Q = []
