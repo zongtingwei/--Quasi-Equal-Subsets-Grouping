@@ -73,7 +73,6 @@ def fast_non_dominated_sort(values1, values2):
     return fronts
 
 def dominates(individual1, individual2, objectives):
-    """
     判断个体1是否支配个体2。
     :param individual1: 个体1。
     :param individual2: 个体2。
