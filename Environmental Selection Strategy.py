@@ -89,7 +89,7 @@ def objective1(xi):
     return 1-mean_accuracy
 
 def objective2(xi):
-    return np.sum(xi == 1)  # 假设目标是最大化第二个维度
+    return np.sum(xi == 1)  
 
 def init_PSO(pN, dim):
     X = np.zeros((pN, dim))  # 所有粒子的位置
