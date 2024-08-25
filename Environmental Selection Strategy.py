@@ -92,7 +92,7 @@ def objective2(xi):
 
 def init_PSO(pN, dim):
     X = np.zeros((pN, dim))  
-    for i in range(pN):  # 外层循环遍历种群中每个粒子
+    for i in range(pN): 
         for j in range(dim):  # 内层循环遍历种群中粒子的每个维度
             r = np.random.uniform(0,1)
             if r > 0.5:
