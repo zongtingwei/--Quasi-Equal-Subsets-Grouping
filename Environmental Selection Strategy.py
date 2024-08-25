@@ -81,7 +81,6 @@ def dominates(individual1, individual2, objectives):
             better_in_one = True
     return better_in_one
 
-# 示例目标函数
 def objective1(xi):
     file_path = r'your filename.mat'
     X_scaled, y = load_and_prepare_data(file_path)
