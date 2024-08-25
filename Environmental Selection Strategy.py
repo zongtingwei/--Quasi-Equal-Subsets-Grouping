@@ -91,7 +91,7 @@ def objective2(xi):
     return np.sum(xi == 1)  
 
 def init_PSO(pN, dim):
-    X = np.zeros((pN, dim))  # 所有粒子的位置
+    X = np.zeros((pN, dim))  
     for i in range(pN):  # 外层循环遍历种群中每个粒子
         for j in range(dim):  # 内层循环遍历种群中粒子的每个维度
             r = np.random.uniform(0,1)
