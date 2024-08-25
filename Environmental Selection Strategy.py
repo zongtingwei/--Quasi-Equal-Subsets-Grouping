@@ -75,7 +75,7 @@ def fast_non_dominated_sort(values1, values2):
 def dominates(individual1, individual2, objectives):
     better_in_one = False
     for obj in objectives:
-        if obj(individual1) > obj(individual2):  # 假设是最大化问题
+        if obj(individual1) > obj(individual2): 
             return False
         elif obj(individual1) < obj(individual2):
             better_in_one = True
