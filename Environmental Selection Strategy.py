@@ -73,8 +73,6 @@ def fast_non_dominated_sort(values1, values2):
     return fronts
 
 def dominates(individual1, individual2, objectives):
-
-    """
     better_in_one = False
     for obj in objectives:
         if obj(individual1) > obj(individual2):  # 假设是最大化问题
