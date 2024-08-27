@@ -119,8 +119,6 @@ def calculate_crowding_distance(solutions,ln):
 
 
 def select_feature_subsets(W, Qe):
-    # Qe是要处理的查询或任务列表
-
     # 假设W是列表的列表（每个子列表代表一个特征子集）
 
     for i in range(len(Qe)):
