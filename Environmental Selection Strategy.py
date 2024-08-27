@@ -100,6 +100,7 @@ def init_PSO(pN, dim):
             else:
                 X[i][j] = 0
     return X
+    
 def calculate_crowding_distance(solutions,ln):
     Cis_list = []
     solution_list = []
@@ -119,8 +120,6 @@ def calculate_crowding_distance(solutions,ln):
 
 
 def select_feature_subsets(W, Qe):
-    # 假设W是列表的列表（每个子列表代表一个特征子集）
-
     for i in range(len(Qe)):
         # 模拟获取给定查询/任务的TS值
         TS = Qe[i]  # 这实际上应该是调用一个函数，该函数评估Qe[i]并返回TS1, TS2, ..., TSt
