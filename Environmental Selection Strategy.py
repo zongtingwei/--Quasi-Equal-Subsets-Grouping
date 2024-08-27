@@ -101,7 +101,6 @@ def init_PSO(pN, dim):
                 X[i][j] = 0
     return X
 def calculate_crowding_distance(solutions,ln):
-    # 用于计算拥挤距离的函数占位符
     Cis_list = []
     solution_list = []
 
