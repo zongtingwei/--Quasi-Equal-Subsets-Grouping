@@ -121,7 +121,6 @@ def calculate_crowding_distance(solutions,ln):
 
 def select_feature_subsets(W, Qe):
     for i in range(len(Qe)):
-        # 模拟获取给定查询/任务的TS值
         TS = Qe[i]  # 这实际上应该是调用一个函数，该函数评估Qe[i]并返回TS1, TS2, ..., TSt
 
         # 对TS解进行非支配排序
