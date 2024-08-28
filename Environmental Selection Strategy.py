@@ -121,7 +121,7 @@ def calculate_crowding_distance(solutions,ln):
 
 def select_feature_subsets(W, Qe):
     for i in range(len(Qe)):
-        TS = Qe[i]  # 这实际上应该是调用一个函数，该函数评估Qe[i]并返回TS1, TS2, ..., TSt
+        TS = Qe[i]  
 
         # 对TS解进行非支配排序
         population_list = TS
