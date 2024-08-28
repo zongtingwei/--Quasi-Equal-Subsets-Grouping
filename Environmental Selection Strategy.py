@@ -135,7 +135,7 @@ def select_feature_subsets(W, Qe):
             for k in range(W[j]):
                 if solution in W[j][k]:
                     rmin = j
-        ln = len(TS) // len(Qe)  # 占位符，替换为实际方程
+        ln = len(TS) // len(Qe) 
 
         if len(TS) > ln:
             # 计算拥挤距离
