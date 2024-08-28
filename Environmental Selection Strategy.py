@@ -135,7 +135,6 @@ def select_feature_subsets(W, Qe):
             for k in range(W[j]):
                 if solution in W[j][k]:
                     rmin = j
-        # 通过方程(5)计算ln - 占位符计算
         ln = len(TS) // len(Qe)  # 占位符，替换为实际方程
 
         if len(TS) > ln:
