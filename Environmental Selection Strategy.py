@@ -141,7 +141,6 @@ def select_feature_subsets(W, Qe):
             Wrmin = calculate_crowding_distance(TS)
             W[rmin].extend(Wrmin)
         else:
-            # 将所有TS特征子集放入Wrmin
             W[rmin].extend(TS)
     return W,ln
 def calculating_Cio(Wm):
