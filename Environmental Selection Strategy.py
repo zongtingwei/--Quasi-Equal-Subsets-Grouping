@@ -138,7 +138,6 @@ def select_feature_subsets(W, Qe):
         ln = len(TS) // len(Qe) 
 
         if len(TS) > ln:
-            # 计算拥挤距离
             Wrmin = calculate_crowding_distance(TS)
             # 将前ln个特征子集放入Wrmin
             W[rmin].extend(Wrmin)
