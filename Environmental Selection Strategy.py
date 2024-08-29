@@ -139,7 +139,6 @@ def select_feature_subsets(W, Qe):
 
         if len(TS) > ln:
             Wrmin = calculate_crowding_distance(TS)
-            # 将前ln个特征子集放入Wrmin
             W[rmin].extend(Wrmin)
         else:
             # 将所有TS特征子集放入Wrmin
