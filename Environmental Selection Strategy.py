@@ -206,7 +206,6 @@ def calculating_Ci(W,N):
 
 
 
-
 data = scio.loadmat(r'your filename.mat')
 dic1 = data['X']
 dic2 = data['Y']
