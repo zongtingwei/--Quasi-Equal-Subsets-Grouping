@@ -207,11 +207,7 @@ def calculating_Ci(W,N):
 
 
 
-# 还差cis的部分
 
-
-
-# 示例种群 
 data = scio.loadmat(r'your filename.mat')
 dic1 = data['X']
 dic2 = data['Y']
