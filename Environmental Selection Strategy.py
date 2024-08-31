@@ -209,7 +209,7 @@ def calculating_Ci(W,N):
 data = scio.loadmat(r'your filename.mat')
 dic1 = data['X']
 dic2 = data['Y']
-df1 = pd.DataFrame(dic1)  # 将NumPy数组转换为DataFrame对象
+df1 = pd.DataFrame(dic1)  
 df2 = pd.DataFrame(dic2)  # 将NumPy数组转换为DataFrame对象
 feats = df1  # 导入特征数据集
 labels = df2
