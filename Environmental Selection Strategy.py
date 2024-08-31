@@ -230,7 +230,6 @@ def selected_NP_solutions(W,ln,N):
             total_solutions_after_m = sum(len(front) for front in W[:m + 1])
             Cio_list = []
             if total_solutions_before_m < N and total_solutions_after_m > N:
-                # 应用刺激条件的操作
                 t = []
                 for front in W[:m - 1]:
                     t.extend(front)
