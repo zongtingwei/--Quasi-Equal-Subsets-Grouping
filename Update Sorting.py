@@ -110,7 +110,7 @@ for j in range(N):
     values2.append(objective2(population_list[j]))
 fronts = fast_non_dominated_sort(values1, values2)
 print(fronts)
-print("非支配前沿：")
+print("undominated front：")
 for i, front in enumerate(fronts):
     print(f"前沿 {i+1}: ", [population[idx] for idx in front])
 population_fronts = []
