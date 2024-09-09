@@ -2,6 +2,8 @@ import scipy.io as scio
 import pandas as pd
 import numpy as np
 
+# you can split your datastes through the code
+
 file_path = r'your file path'
 data = scio.loadmat(file_path)
 dic1 = data['X']
